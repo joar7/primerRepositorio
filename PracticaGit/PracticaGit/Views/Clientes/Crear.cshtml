@@ -1,0 +1,8 @@
+﻿@model PracticaGit.ViewModels.PersonaViewModel
+
+@using (Html.BeginForm("Guardar", "Clientes"))
+{
+    @Html.ValidationSummary()
+    @Html.EditorForModel()
+    <input type="submit" />
+}
